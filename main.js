@@ -7,7 +7,6 @@ mongoose
     .connect(process.env.MONGODB_SRV, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        useFindAndModify: false
     })
     .then(() => {
         console.log("Connected to the Database!");
@@ -23,3 +22,4 @@ client.once('ready', ()=> {
 console.log('Token', process.env.Discord_TOKENEER);
 
 client.login(process.env.Discord_TOKENEER);
+//Always keep on the last line
